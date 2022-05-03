@@ -13,18 +13,18 @@ from prolog import ospedalization
 if __name__ == '__main__':
     simplefilter(action='ignore', category=FutureWarning)
     
-    data = pd.read_csv(r".\..\dataset\datasetUltimate.csv")
+    data = pd.read_csv(r".\..\dataset\heart_disease_health_indicators_BRFSS2015.csv")
     
-    y = data.Disorder
-    x = data.drop('Disorder', axis=1)
+    y = data.HeartDiseaseorAttack
+    x = data.drop('HeartDiseaseorAttack', axis=1)
 
-    y=y.astype('int')
-    x=x.astype('int')
-    
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.33)
+    y=y.astype('float')
+    x=x.astype('float')
+
+    x_train, x_test, y_train, y_test = train_test_split(x, y) #, test_size=0.2
     
     model = DecisionTreeClassifier()
-    
+
     model.fit(x_train, y_train)    
     p_train = model.predict(x_train)
     p_test = model.predict(x_test)
@@ -35,35 +35,25 @@ if __name__ == '__main__':
     
     us = interaction()
     ris = us.getValues()
+    print ("\nRisultati");
+    print(ris);
+    #inserire qui la visualizzazione dei risultati e capisci
     #ospedalization(ris)
     
-    for index, row in ris.iterrows():
+    '''for index, row in ris.iterrows():
         if(row[0] == 'Yes'):
             row[0]=1
         else:
-            row[0]=0
+            row[0]=0'''
     ris = ris.T
     
     p = model.predict(ris)
-    '''if(p[0] == 'Normal'):
+    print("\nRisultato predizione");
+    print(p);
+    if(p[0] == 1):
+        print("\nSecondo me tu si matt!")
+    elif(p[0] == 0):
         print("\nSecondo me ste bun!")
-    elif(p[0] == 'Anxiety'):
-        print("\nSei ansioso frae!")
-    elif (p[0] == 'Depression'):
-       print("\nSei depresso bro!")
-    elif (p[0] == 'Loneliness'):
-       print("\nFra non sei solo non ti preoccupaere!")
-    elif (p[0] == 'Stress'):
-        print("\nFrae sei stresseto!")'''
-
-    if (p[0] == 0):
-        print("\nSecondo me ste bun!")
-    elif (p[0] == 1):
-        print("\nSei ansioso frae!")
-    elif (p[0] == 2):
-        print("\nSei depresso bro!")
-    elif (p[0] == 3):
-        print("\nFra non sei solo non ti preoccupaere!")
-    elif (p[0] == 4):
-        print("\nFrae sei stresseto!")
+    else: (print("\nciao"))
+        
 pass
