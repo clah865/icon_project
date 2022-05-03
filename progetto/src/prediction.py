@@ -40,11 +40,11 @@ if __name__ == '__main__':
     #inserire qui la visualizzazione dei risultati e capisci
     #ospedalization(ris)
     
-    '''for index, row in ris.iterrows():
+    for index, row in ris.iterrows():
         if(row[0] == 'Yes'):
             row[0]=1
         else:
-            row[0]=0'''
+            row[0]=0
     ris = ris.T
     
     p = model.predict(ris)
