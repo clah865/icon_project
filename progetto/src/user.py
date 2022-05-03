@@ -7,105 +7,98 @@ import pandas as pd
 class User(object):
 
     def __init__(self):
-        self.feelingNervous = "No"
-        self.panic = "No"
-        self.breathingRapidly = "No"
-        self.sweating = "No"
-        self.troubleInConcentration = "No"
-        self.havingTroubleInSleeping = "No"
-        self.havingTroubleWithWork = "No"
-        self.hopelessness = "No"
-        self.anger = "No"
-        self.overReact = "No"
-        self.changeInEating = "No"
-        self.suicidalThought = "No"
-        self.feelingTired = "No"
-        self.closeFriend = "No"
-        self.socialMediaAddiction = "No"
-        self.weightGain = "No"
-        self.materialPossessions = "No"
-        self.introvert = "No"
-        self.poppingUpStressfulMemory = "No"
-        self.havingNightmares = "No"
-        self.avoidsPeopleOrActivities = "No"
-        self.feelingNegative = "No"
-        self.troubleConcentrating = "No"
-        self.blamingYourself = "No"
+        self.HighBP = "No"
+        self.HighChol = "No"
+        self.CholCheck = "No"
+        self.BMI = "No"
+        self.smoker = "No"
+        self.stroke = "No"
+        self.Diabetes = "No"
+        self.PhysActivity = "No"
+        self.Fruits = "No"
+        self.Veggies = "No"
+        self.HvyAlcoholConsump = "No"
+        self.AnyHealthcare = "No"
+        self.NoDocbcCost= "No"
+        self.GenHlth = "No"
+        self.MentHlth = "No"
+        self.PhysHlth = "No"
+        self.Diabetes = "No"
+        self.PhysActivity = "No"
+        self.DiffWalk = "No"
+        self.sex = "No"
+        self.age = "No"
+        self.Education = "No"
+        self.Income = "No"
+
 
         
     def getValues(self):
         df = pd.DataFrame.from_dict(vars(self), orient='index', dtype='string')
         return df
 
-    def setFeelingNervous(self, val):
-        self.feelingNervous = val
-     
-    def setPanic(self, val):
-        self.panic =val
-      
-    def setBreathingRapidly(self, val):
-        self.breathingRapidly =val
+    def setHighBP(self, val):
+        self.HighBP = val
+
+    def setHighChol(self, val):
+        self.HighChol = val
+
+    def setCholCheck(self, val):
+        self.CholCheck = val
+
+    def setBMI(self, val):
+        self.BMI = val
+
+    def setSmoker(self, val):
+        self.smoker = val
+
+    def setStroke(self, val):
+        self.stroke = val
+
+    def setDiabetes(self, val):
+        self.Diabetes = val
+
+    def setPhysActivity(self, val):
+        self.PhysActivity = val
+
+    def setFruits(self, val):
+        self.Fruits = val
+
+    def setVeggies(self, val):
+        self.Veggies = val
+
+    def setHvyAlcoholConsump(self, val):
+        self.HvyAlcoholConsump = val
+
+    def setAnyHealthcare(self, val):
+        self.AnyHealthcare = val
+
+    def setNoDocbcCost(self, val):
+        self.NoDocbcCost = val
+
+    def setGenHlth(self, val):
+        self.GenHlth = val
+
+    def setMentHlth(self, val):
+        self.MentHlth = val
+
+    def setPhysHlth(self, val):
+        self.PhysHlth = val
+
+    def setDiffWalk(self, val):
+        self.DiffWalk = val
+
+    def setSex(self, val):
+         self.sex = val
+
+    def setAge(self, val):
+        self.age = val
+
+    def setEducation(self, val):
+        self.Education = val
+
+    def setIncome(self, val):
+        self.Income = val
         
-    def setSweating(self, val):
-        self.sweating =val
-        
-    def setTroubleInConcentration(self, val):
-        self.troubleInConcentration =val
-        
-    def setHavingTroubleInSleeping(self, val):
-        self.havingTroubleInSleeping =val
-        
-    def setHavingTroubleWithWork(self, val):
-        self.havingTroubleWithWork =val
-        
-    def setHopelessness(self, val):
-        self.hopelessness =val
-        
-    def setAnger(self, val):
-        self.anger =val
-        
-    def setOverReact(self, val):
-        self.overReact =val
-       
-    def setChangeInEating(self, val):
-        self.changeInEating =val
-        
-    def setSuicidalThought(self, val):
-        self.suicidalThought =val
 
-    def setFeelingTired(self, val):
-        self.feelingTired = val
-
-    def setCloseFriend(self, val):
-        self.closeFriend =val
-
-    def setSocialMediaAddiction(self, val):
-        self.socialMediaAddiction =val
-
-    def setWeightGain(self, val):
-        self.weightGain =val
-
-    def setMaterialPossessions(self, val):
-        self.materialPossessions =val
-
-    def setIntrovert(self, val):
-        self.introvert =val
-
-    def setPoppingUpStressfulMemory(self, val):
-        self.poppingUpStressfulMemory =val
-
-    def setHavingNightmares(self, val):
-        self.havingNightmares =val
-
-    def setAvoidsPeopleOrActivities(self, val):
-        self.avoidsPeopleOrActivities =val
-
-    def setFeelingNegative(self, val):
-        self.feelingNegative =val
-
-    def setTroubleConcentrating(self, val):
-        self.troubleConcentrating =val
-
-    def setBlamingYourself(self, val):
-        self.blamingYourself =val
 
