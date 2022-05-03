@@ -7,30 +7,23 @@ import pandas as pd
 class User(object):
 
     def __init__(self):
-        self.HighBP = "No"
-        self.HighChol = "No"
-        self.CholCheck = "No"
+        self.highBP = "No"
+        self.highChol = "No"
+        self.cholCheck = "No"
         self.BMI = "No"
         self.smoker = "No"
         self.stroke = "No"
-        self.Diabetes = "No"
-        self.PhysActivity = "No"
-        self.Fruits = "No"
-        self.Veggies = "No"
-        self.HvyAlcoholConsump = "No"
-        self.AnyHealthcare = "No"
-        self.NoDocbcCost= "No"
-        self.GenHlth = "No"
-        self.MentHlth = "No"
-        self.PhysHlth = "No"
-        self.Diabetes = "No"
-        self.PhysActivity = "No"
-        self.DiffWalk = "No"
+        self.diabetes = "No"
+        self.physActivity = "No"
+        self.fruits = "No"
+        self.veggies = "No"
+        self.hvyAlcoholConsump = "No"
+        self.genHlth = "No"
+        #self.mentHlth = "No"
+        #self.physHlth = "No"
+        self.diffWalk = "No"
         self.sex = "No"
         self.age = "No"
-        self.Education = "No"
-        self.Income = "No"
-
 
         
     def getValues(self):
@@ -70,12 +63,6 @@ class User(object):
     def setHvyAlcoholConsump(self, val):
         self.HvyAlcoholConsump = val
 
-    def setAnyHealthcare(self, val):
-        self.AnyHealthcare = val
-
-    def setNoDocbcCost(self, val):
-        self.NoDocbcCost = val
-
     def setGenHlth(self, val):
         self.GenHlth = val
 
@@ -94,11 +81,5 @@ class User(object):
     def setAge(self, val):
         self.age = val
 
-    def setEducation(self, val):
-        self.Education = val
-
-    def setIncome(self, val):
-        self.Income = val
-        
 
 
