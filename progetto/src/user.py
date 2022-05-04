@@ -7,25 +7,25 @@ import pandas as pd
 class User(object):
 
     def __init__(self):
-        self.highBP = "No"
-        self.highChol = "No"
-        self.cholCheck = "No"
-        self.BMI = "No"
-        self.smoker = "No"
-        self.stroke = "No"
-        self.diabetes = "No"
-        self.physActivity = "No"
-        self.fruits = "No"
-        self.veggies = "No"
-        self.hvyAlcoholConsump = "No"
-        self.genHlth = "No"
-        #self.mentHlth = "No"
-        #self.physHlth = "No"
-        self.diffWalk = "No"
-        self.sex = "No"
-        self.age = "No"
+        self.highBP = 0
+        self.highChol = 0
+        self.cholCheck = 0
+        self.BMI = 0
+        self.smoker = 0
+        self.stroke = 0
+        self.diabetes = 0
+        self.physActivity = 0
+        self.fruits = 0
+        self.veggies = 0
+        self.hvyAlcoholConsump = 0
+        self.genHlth = 0
+        self.mentHlth = 0
+        self.physHlth = 0
+        self.diffWalk = 0
+        self.sex = 0
+        self.age = 0
 
-        
+
     def getValues(self):
         df = pd.DataFrame.from_dict(vars(self), orient='index', dtype='string')
         return df
@@ -80,6 +80,3 @@ class User(object):
 
     def setAge(self, val):
         self.age = val
-
-
-
