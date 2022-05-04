@@ -16,49 +16,44 @@ def interaction():
 
     while (True):
         print('Inserisci il tuo sesso:')
-        utente.setSex(input(''))
-        if (utente.sex.lower().__eq__('m') or utente.sex.lower().__eq__('maschio') or utente.sex.lower().__eq__(
-                'male')):
+        risposta = (input(''))
+        if (risposta.lower().__eq__('m') or risposta.lower().__eq__('maschio') or risposta.lower().__eq__('male')):
             utente.setSex(1)
             flag = 1
             break
-        elif (utente.sex.lower().__eq__('f') or utente.sex.lower().__eq__('femmina') or utente.sex.lower().__eq__(
-                'female')):
+        elif (risposta.lower().__eq__('f') or risposta.__eq__('femmina') or risposta.lower().__eq__('female')):
             utente.setSex(0)
             flag = 0
             break
 
     while (True):
         print('Hai una pressione sanguigna elevata?')
-        utente.setHighBP(input(''))
-        if (utente.highBP.lower().__eq__('si') or utente.highBP.lower().__eq__(
-            's') or utente.highBP.lower().__eq__('y') or utente.highBP.lower().__eq__('yes')):
-            utente.setHighBP('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setHighBP(1)
             break
-        elif (utente.highBP.lower().__eq__('no') or utente.highBP.lower().__eq__('n')):
-            utente.setHighBP('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setHighBP(0)
             break
 
     while (True):
-        print('Ti è MAI stato detto da un medico, un infermiere o un altro operatore sanitario che il tuo colesterolo nel sangue è alto?')
-        utente.setHighChol(input(''))
-        if (utente.highChol.lower().__eq__('si') or utente.highChol.lower().__eq__(
-                's') or utente.highChol.lower().__eq__('y') or utente.highChol.lower().__eq__('yes')):
-            utente.setHighChol('Yes')
+        print('Ti è mai stato detto da un medico, un infermiere o un altro operatore sanitario che il tuo colesterolo nel sangue è alto?')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setHighChol(1)
             break
-        elif (utente.highChol.lower().__eq__('no') or utente.highChol.lower().__eq__('n')):
-            utente.setHighChol('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setHighChol(0)
             break
 
     while (True):
         print('Hai eseguito un controllo del colesterolo negli ultimi cinque anni?')
-        utente.setCholCheck(input(''))
-        if (utente.cholCheck.lower().__eq__('si') or utente.cholCheck.lower().__eq__(
-                's') or utente.cholCheck.lower().__eq__('y') or utente.cholCheck.lower().__eq__('yes')):
-            utente.setCholCheck('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setCholCheck(1)
             break
-        elif (utente.cholCheck.lower().__eq__('no') or utente.cholCheck.lower().__eq__('n')):
-            utente.setCholCheck('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setCholCheck(0)
             break
 
     while (True):
@@ -68,53 +63,51 @@ def interaction():
 
     while (True):
         print('Hai fumato almeno 100 sigarette in tutta la tua vita?[Nota: 5 pacchetti = 100 sigarette]')
-        utente.setSmoker(input(''))
-        if (utente.smoker.lower().__eq__('si') or utente.smoker.lower().__eq__(
-                's') or utente.smoker.lower().__eq__('y') or utente.smoker.lower().__eq__('yes')):
-            utente.setSmoker('Yes')
+        risposta = (input(''))
+        if (risposta.__eq__('si') or risposta.__eq__('s') or risposta.__eq__('y') or risposta.__eq__('yes')):
+            utente.setSmoker(1)
             break
-        elif (utente.smoker.lower().__eq__('no') or utente.smoker.lower().__eq__('n')):
-            utente.setSmoker('No')
+        elif (risposta.__eq__('no') or risposta.__eq__('n')):
+            utente.setSmoker(0)
             break
 
     while (True):
         print('Hai mai avuto un ictus?')
-        utente.setStroke(input(''))
-        if (utente.stroke.lower().__eq__('si') or utente.stroke.lower().__eq__(
-                's') or utente.stroke.lower().__eq__('y') or utente.stroke.lower().__eq__('yes')):
-            utente.setStroke('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setStroke(1)
             break
-        elif (utente.stroke.lower().__eq__('no') or utente.stroke.lower().__eq__('n')):
-            utente.setStroke('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setStroke(0)
             break
 
 
     while (True):
         print('Hai il diabete?')
-        utente.setDiabetes(input(''))
-        if (utente.diabetes.lower().__eq__('si') or utente.diabetes.lower().__eq__(
-                's') or utente.diabetes.lower().__eq__('y') or utente.diabetes.lower().__eq__('yes')):
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__(
+                's') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
             utente.setDiabetes(2)
             break
-        elif (utente.diabetes.lower().__eq__('no') or utente.diabetes.lower().__eq__('n')):
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
             utente.setDiabetes(0)
             if (flag == 0):
                 print('Hai avuto il diabete solo durante la gravidanza?')
                 utente.setDiabetes(input(''))
-            if (utente.diabetes.lower().__eq__('si') or utente.diabetes.lower().__eq__(
-                    's') or utente.diabetes.lower().__eq__('y') or utente.diabetes.lower().__eq__('yes')):
-                utente.setDiabetes(0)
-                break
-            elif (utente.diabetes.lower().__eq__('no') or utente.diabetes.lower().__eq__('n')):
-                utente.setDiabetes(0)
+                if (risposta.lower().__eq__('si') or risposta.lower().__eq__(
+                     's') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+                    utente.setDiabetes(0)
+                    break
+                elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+                    utente.setDiabetes(0)
 
-            print('Sei in pre-diabete?')
+            print('Sei in uno stato di pre-diabete?')
             utente.setDiabetes(input(''))
-            if (utente.diabetes.lower().__eq__('si') or utente.diabetes.lower().__eq__(
-                    's') or utente.diabetes.lower().__eq__('y') or utente.diabetes.lower().__eq__('yes')):
+            if (risposta.lower().__eq__('si') or risposta.lower().__eq__(
+                    's') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
                 utente.setDiabetes(1)
                 break
-            elif (utente.diabetes.lower().__eq__('no') or utente.diabetes.lower().__eq__('n')):
+            elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
                 utente.setDiabetes(0)
                 break
 
@@ -122,35 +115,32 @@ def interaction():
 
     while (True):
         print('Hai svolto attività fisica o esercizio fisico negli ultimi 30 giorni in modo diverso dal normale lavoro?')
-        utente.setPhysActivity(input(''))
-        if (utente.physActivity.lower().__eq__('si') or utente.physActivity.lower().__eq__(
-                's') or utente.physActivity.lower().__eq__('y') or utente.physActivity.lower().__eq__('yes')):
-            utente.setPhysActivity('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setPhysActivity(1)
             break
-        elif (utente.physActivity.lower().__eq__('no') or utente.physActivity.lower().__eq__('n')):
-            utente.setPhysActivity('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setPhysActivity(0)
             break
 
     while (True):
         print('Mangi frutta 1 o più volte al giorno? ')
-        utente.setFruits(input(''))
-        if (utente.fruits.lower().__eq__('si') or utente.fruits.lower().__eq__(
-                's') or utente.fruits.lower().__eq__('y') or utente.fruits.lower().__eq__('yes')):
-            utente.setFruits('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setFruits(1)
             break
-        elif (utente.fruits.lower().__eq__('no') or utente.fruits.lower().__eq__('n')):
-            utente.setFruits('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setFruits(0)
             break
 
     while (True):
         print('Mangi verdura 1 o più volte al giorno? ')
-        utente.setVeggies(input(''))
-        if (utente.veggies.lower().__eq__('si') or utente.veggies.lower().__eq__(
-                's') or utente.veggies.lower().__eq__('y') or utente.veggies.lower().__eq__('yes')):
-            utente.setVeggies('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setVeggies(1)
             break
-        elif (utente.veggies.lower().__eq__('no') or utente.veggies.lower().__eq__('n')):
-            utente.setVeggies('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setVeggies(0)
             break
 
     while (True):
@@ -158,55 +148,55 @@ def interaction():
             print('Bevi più di 14 drink a settimana?')
         else:
             print('Bevi più di 7 drink a settimana?')
-        utente.setHvyAlcoholConsump(input(''))
-        if (utente.hvyAlcoholConsump.lower().__eq__('si') or utente.hvyAlcoholConsump.lower().__eq__(
-                's') or utente.hvyAlcoholConsump.lower().__eq__('y') or utente.hvyAlcoholConsump.lower().__eq__('yes')):
-            utente.setHvyAlcoholConsump('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or utente.risposta.lower().__eq__('yes')):
+            utente.setHvyAlcoholConsump(1)
             break
-        elif (utente.hvyAlcoholConsump.lower().__eq__('no') or utente.hvyAlcoholConsump.lower().__eq__('n')):
-            utente.setHvyAlcoholConsump('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setHvyAlcoholConsump(0)
             break
 
     while (True):
         print('Diresti che in genere la tua salute è (valore massimo 1, valore minimo 5):')
-        utente.setGenHlth(input(''))
-        if (utente.genHlth < 1 or utente.genHlth > 5 ):
-            print('Valore non valido!')
-        else:
+        risposta = (input(''))
+        if (int(risposta) >= 1 and int(risposta) <= 5 ):
+            utente.setGenHlth(risposta)
             break
+        else:
+            print('Valore non valido!')
 
     while (True):
         print('Per quanti giorni negli ultimi 30 giorni la tua salute mentale non è stata buona?')
-        utente.setMentHlth(input(''))
-        if (utente.mentHlth < 0 or utente.mentHlth > 30 ):
-            print('Valore non valido!')
-        else:
+        risposta = (input(''))
+        if (int(risposta) >= 0 and int(risposta) <= 30 ):
+            utente.setMentHlth(input(''))
             break
+        else:
+            print('Valore non valido!')
 
     while (True):
         print('Per quanti giorni negli ultimi 30 giorni la tua salute fisica non è stata buona?')
-        utente.setPhysHlth(input(''))
-        if (utente.physHlth < 0 or utente.physHlth > 30 ):
-            print('Valore non valido!')
-        else:
+        risposta = (input(''))
+        if (int(risposta) >= 0 and int(risposta) <= 30 ):
+            utente.setPhysHlth(input(''))
             break
-
+        else:
+            print('Valore non valido!')
 
     while (True):
         print('Hai difficoltà nel camminare o nel salire le scale?')
-        utente.setDiffWalk(input(''))
-        if (utente.diffWalk.lower().__eq__('si') or utente.diffWalk.lower().__eq__(
-                's') or utente.diffWalk.lower().__eq__('y') or utente.diffWalk.lower().__eq__('yes')):
-            utente.setDiffWalk('Yes')
+        risposta = (input(''))
+        if (risposta.lower().__eq__('si') or risposta.lower().__eq__('s') or risposta.lower().__eq__('y') or risposta.lower().__eq__('yes')):
+            utente.setDiffWalk(1)
             break
-        elif (utente.diffWalk.lower().__eq__('no') or utente.diffWalk.lower().__eq__('n')):
-            utente.setDiffWalk('No')
+        elif (risposta.lower().__eq__('no') or risposta.lower().__eq__('n')):
+            utente.setDiffWalk(0)
             break
 
     while (True):
         print('Inserisci la tua eta:')
-        utente.setAge(input(''))
-        if (utente.setAge >= 18 and utente.setAge <= 24):
+        risposta = (input(''))
+        if (int(risposta) >= 18 and int(risposta) <= 24):
             utente.setAge(1)
             break
         elif (utente.setAge >= 25 and utente.setAge <= 29):

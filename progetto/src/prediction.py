@@ -13,7 +13,7 @@ from prolog import ospedalization
 if __name__ == '__main__':
     simplefilter(action='ignore', category=FutureWarning)
     
-    data = pd.read_csv(r".\..\dataset\heart_disease_health_indicators_BRFSS2015.csv")
+    data = pd.read_csv( "/home/clah865/icon_project/progetto/dataset/heart_disease_health_indicators_BRFSS2015.csv")
     
     y = data.HeartDiseaseorAttack
     x = data.drop('HeartDiseaseorAttack', axis=1)
@@ -29,9 +29,9 @@ if __name__ == '__main__':
     p_train = model.predict(x_train)
     p_test = model.predict(x_test)
 
-    accuracy(y_train, y_test, p_train, p_test)
+    '''accuracy(y_train, y_test, p_train, p_test)
     MAE(y_train, y_test, p_train, p_test)
-    kfold(model, x, y)
+    kfold(model, x, y)'''
     
     us = interaction()
     ris = us.getValues()
@@ -40,11 +40,11 @@ if __name__ == '__main__':
     #inserire qui la visualizzazione dei risultati e capisci
     #ospedalization(ris)
     
-    for index, row in ris.iterrows():
+    '''for index, row in ris.iterrows():
         if(row[0] == 'Yes'):
             row[0]=1
         else:
-            row[0]=0
+            row[0]=0'''
     ris = ris.T
     
     p = model.predict(ris)
