@@ -31,13 +31,13 @@ class User(object):
         return df
 
     def setHighBP(self, val):
-        self.HighBP = val
+        self.highBP = val
 
     def setHighChol(self, val):
-        self.HighChol = val
+        self.highChol = val
 
     def setCholCheck(self, val):
-        self.CholCheck = val
+        self.cholCheck = val
 
     def setBMI(self, val):
         self.BMI = val
@@ -49,31 +49,31 @@ class User(object):
         self.stroke = val
 
     def setDiabetes(self, val):
-        self.Diabetes = val
+        self.diabetes = val
 
     def setPhysActivity(self, val):
-        self.PhysActivity = val
+        self.physActivity = val
 
     def setFruits(self, val):
-        self.Fruits = val
+        self.fruits = val
 
     def setVeggies(self, val):
-        self.Veggies = val
+        self.veggies = val
 
     def setHvyAlcoholConsump(self, val):
-        self.HvyAlcoholConsump = val
+        self.hvyAlcoholConsump = val
 
     def setGenHlth(self, val):
-        self.GenHlth = val
+        self.genHlth = val
 
     def setMentHlth(self, val):
-        self.MentHlth = val
+        self.mentHlth = val
 
     def setPhysHlth(self, val):
-        self.PhysHlth = val
+        self.physHlth = val
 
     def setDiffWalk(self, val):
-        self.DiffWalk = val
+        self.diffWalk = val
 
     def setSex(self, val):
          self.sex = val
