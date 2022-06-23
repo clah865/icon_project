@@ -4,6 +4,7 @@
  
 from user import User
 
+
 def interaction():
     print("Benvenuto nel sistema per predire se sei affetto di una malattia cardiaca. \n\
     Per capire cio' verranno somministrate una serie di domande riguardanti il tuo stile di vita e il tuo stato psicofisico.\n\
@@ -279,6 +280,6 @@ def interaction():
             utente.setDiffWalk(0)
             break
 
-
+    print("Analisi delle tue risposte...")
 
     return utente
